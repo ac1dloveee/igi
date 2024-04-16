@@ -1,101 +1,56 @@
-import re
-import itertools 
 from zipfile import *
 import os
+from .service import *
 
-class task:
-    def __init__(
-            self, path: str = '/home/main/igilab/l4/second/data/data.txt',
-            output_path='/home/main/igilab/l4/second/data/results.txt'):
+class Task(TextServiceMixin):
+    """
+    A class that encapsulates the functionality for reading, processing, and zipping text data.
+
+    Attributes:
+        __filepath (str): Path to the input text file.
+        __output_filepath (str): Path to the output text file where results will be written.
+    """
+
+    def __init__(self, path: str = '/home/main/igilab/l4/second/data/data.txt',
+                 output_path='/home/main/igilab/l4/second/data/results.txt'):
+        """
+        Initializes the Task instance with paths for input and output files.
+
+        Args:
+            path (str): The file path for reading data.
+            output_path (str): The file path for writing results.
+        """
         self.__filepath = path
         self.__output_filepath = output_path
 
-
     def read_data_from_file(self) -> str:
+        """
+        Reads data from the file at the specified file path.
+
+        Returns:
+            str: The content of the file as a string.
+        """
         with open(self.__filepath, 'r') as text:
             return text.read()
 
-
-    def list_of_sentences(
-            self, text: str) -> list[str]:
-        return [item.replace(
-            '\n', '') for item in re.split("[\.\?\!]", text) if len(item) > 0 ]
-
-
-    def amount_of_sentences_by_ending_symbol(
-            self, text: str, symbol) -> list[str]:
-        return len(re.split(
-            f'\{ symbol }', text)) - 1 if text.count(symbol) != 0 else 0
-
-
-    def remove_non_letter_symbols(
-            self, text: str) -> str:
-        return re.compile('[^a-zA-Z\ ]').sub('', text)
-
-
-    def average_sentence_length(
-            self, sentences: list[str]) -> float:
-        return sum([len(self.remove_non_letter_symbols(
-            item).replace(' ', '')) for item in sentences]) / len(sentences)
-
-
-    def list_of_words(
-            self, sentences: list[str]) -> list[str]:
-        return [item for item in list(itertools.chain.from_iterable(
-            [self.remove_non_letter_symbols(item).split(' ') for item in sentences])) if item != '']
-
-
-    def average_word_length(
-            self, words: list[str]) -> float:
-        return sum(map(len, words)) / len(words)
-
-
-    def is_guid(self, text: str) -> bool:
-        return re.search(
-            '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', text) is not None
-
-
-    def amount_of_smiles(
-            self, text: str) -> int:
-        return len(re.split(
-            '[:;]-*[\[\]()]', text)) - 1 if re.search(
-                '[:;]-*[\[\]()]', text) else 0
-
-
-    def amount_of_uppercase_letters(
-            self, text: str) -> int:
-        return len(re.findall('[A-Z]', text))
-
-
-    def amount_of_lowercase_letters(
-            self, text: str) -> int:
-        return len(re.findall('[a-z]', text))
-
-
-    def first_word_with_letter(
-            self, words: list[str], letter):
-        return [(item, words.index(item) + 1) for item in words if letter in item.lower()][0]
-
-
-    def remove_words_starting_with(
-            self, text: str, letter: str) -> str:
-        return re.compile(f"[^a-zA-Z\-][{ letter.lower() }{ letter.upper() }][a-zA-Z\-']*").sub('', text)
-
-
     def zip_results(self):
-        with ZipFile(
-                '/home/main/igilab/l4/second/data/results.zip', 'w',
-                compression=ZIP_DEFLATED, compresslevel=3) as zp:
+        """
+        Zips the results file and prints the details of the zipped items. Removes the original results file after zipping.
+        """
+        with ZipFile('/home/main/igilab/l4/second/data/results.zip', 'w',
+                     compression=ZIP_DEFLATED, compresslevel=3) as zp:
             zp.write(self.__output_filepath, arcname='results.txt')
-            
+
             for item in zp.infolist():
                 print(f"Filename: {item.filename}, Date: {item.date_time}, Size: {item.file_size}")
 
         os.remove(self.__output_filepath)
 
-
-
     def execute(self):
+        """
+        Executes the main functionality of the Task class. It reads data, processes it to calculate various statistics,
+        writes the results to an output file, and then zips this output file.
+        """
         data = self.read_data_from_file()
 
         amount_of_dot_sentences = self.amount_of_sentences_by_ending_symbol(data, '.')

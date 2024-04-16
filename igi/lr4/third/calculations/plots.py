@@ -1,12 +1,30 @@
 import matplotlib.pyplot as mpl
-from .iteration import iteration
+from .iteration import Iteration
 
-class plot_service:
+class PlotService:
     def __init__(self):
+        """
+        Initializes an instance of the plot_service class.
+        """
         pass
     
     @staticmethod
-    def plot_sequence(iterations: list[iteration]):
+    def plot_sequence(iterations: list[Iteration]):
+        """
+        Plots the function values by sequence and math library.
+
+        Parameters:
+            iterations (list[Iteration]): A list of Iteration objects containing details for each iteration.
+
+        Returns:
+            None
+
+        Saves:
+            A plot in 'plot.pdf' file.
+
+        Prints:
+            'Plot Is Saved In plot.pdf'
+        """
         x_points = [item.x for item in iterations]
         y_points = [item.f for item in iterations]
         math_y_points = [item.math_f for item in iterations]

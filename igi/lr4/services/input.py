@@ -1,4 +1,4 @@
-class input_service:
+class InputService:
     @staticmethod
     def input_specified_type(type_to_convert_into: type, input_message: str):
         """
