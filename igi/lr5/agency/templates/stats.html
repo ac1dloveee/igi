@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}Stats{% endblock %}
+{% block body %}
+
+<center><h1><strong>STATS</strong></h1></center>
+
+<center>
+
+<div>
+    <h1>Average Client Age: {{ avg_age }}</h1>
+    <h1>Median Client Age: {{ md_age }}</h1>
+    <h1>Average trip price: {{ avg_price }}</h1>
+    <h1>Median trip price: {{ md_price }}</h1>
+    <h1>Average trip sales amount: {{ avg_sales }}</h1>
+    <h1>Median trip sales amount: {{ md_sales }}</h1>
+</div>
+</center>
+
+{% endblock %}

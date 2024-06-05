@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+
+{% block title %}Trips{% endblock %}
+{% block body %}
+
+<center><h1>TRIPS</h1></center>
+<center>
+    <form method="POST" action="{% url 'agency:trips' %}">
+        {% csrf_token %}
+        <div>
+            <label>Duration
+                <select name="duration">
+                    <option value="0">Any</option>
+                    <option value="7">1 week</option>
+                    <option value="14">2 weeks</option>
+                    <option value="28">4 weeks</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label>Hotel Stars
+                <select name="stars">
+                    <option value="0">Any</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </label>
+        </div>
+        <button type="submit">Apply filter</button>
+    </form>
+</center>
+
+<center>
+{% for item in trips %}
+<div>
+    <h1>Country: {{ item.country }}</h1>
+    <h3>Hotel: {{ item.hotel.name }}, {{ item.hotel.stars }} stars, {{ item.hotel.price_per_night }} usd per night</h3>
+    <h3>Duration: {{ item.duration }} days</h3>
+    <h3>Full price: {{ item.price }} usd</h3>
+    <h3>Available orders: {{ item.available }} </h3>
+    <h3>Already bought: {{ item.users.count }} </h3>
+</div>
+    {% if user.role == "client" %}
+        <a href="{% url 'agency:buy_trip' item.pk %}">Buy</a>
+    {% endif %}
+{% endfor %}
+</center>
+
+{% endblock %}

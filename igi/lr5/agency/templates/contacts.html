@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}Contacts{% endblock %}
+{% block body %}
+
+<center><h1><strong>CONTACTS</strong></h1></center>
+
+<center>
+{% for item in contacts %}
+<div>
+    <img src="{{ item.picture.url }}" width="400px" height="auto">
+    <h2>{{ item.user.username }}</h2>
+    <h2>{{ item.description }}</h2>
+</div>
+{% endfor %}
+</center>
+
+{% endblock %}

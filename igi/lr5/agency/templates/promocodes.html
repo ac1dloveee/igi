@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}Promocodes{% endblock %}
+{% block body %}
+
+<center><h1><strong>PROMOCODES</strong></h1></center>
+
+<center>
+{% for item in promocodes %}
+<div>
+    <h2>Promocode: {{ item.value }}</h2>
+    <h2>Discount: {{ item.discount }}%</h2>
+    <h2>Expires in: {{ item.expires }}</h2>
+</div>
+{% endfor %}
+</center>
+
+{% endblock %}

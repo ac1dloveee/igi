@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}edit review{% endblock %}
+{% block body %}
+
+<center><h1><strong>edit review</strong></h1></center>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit"> 
+</form>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}Countries{% endblock %}
+{% block body %}
+
+<center><h1>COUNTRIES</h1></center>
+
+<center>
+{% for item in countries %}
+<div>
+    <h1>{{ item.name }}</h1>
+    <h3>Winter climate: {{ item.climate.winter }}</h3>
+    <h3>Spring climate: {{ item.climate.spring }}</h3>
+    <h3>Summer climate: {{ item.climate.summer }}</h3>
+    <h3>Autumn climate: {{ item.climate.autumn }}</h3>
+</div>
+{% endfor %}
+</center>
+
+{% endblock %}

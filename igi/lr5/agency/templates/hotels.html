@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+{% block body %}
+
+<center><h1>HOTELS</h1></center>
+
+<center>
+{% for item in hotels %}
+<div>
+    <h1>{{ item.name }}</h1>
+    <h2>{{ item.stars }} stars</h2>
+    <h3>{{ item.price_per_night }} usd per night</h3>
+    <h3>Located in: {{ item.country.name }}</h3>
+    <h4>Winter climate: {{ item.country.climate.winter }}</h4>
+    <h4>Spring climate: {{ item.country.climate.spring }}</h4>
+    <h4>Summer climate: {{ item.country.climate.summer }}</h4>
+    <h4>Autumn climate: {{ item.country.climate.autumn }}</h4>
+</div>
+{% endfor %}
+</center>
+
+{% endblock %}

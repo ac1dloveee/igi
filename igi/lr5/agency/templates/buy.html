@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}Trips{% endblock %}
+{% block body %}
+
+<center><div>
+    <h1>Country: {{ trip.country.name }}</h1>
+    <h1>Price: ${{ trip.price }}</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Buy</button>
+    </form>
+</div></center>
+
+{% endblock %}

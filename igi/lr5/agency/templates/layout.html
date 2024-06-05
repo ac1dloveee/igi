@@ -1,0 +1,46 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<ul>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/company">About Us</a></li>
+    <li><a href="/news">News</a></li>
+    <li><a href="/faq">FAQ</a></li>
+    <li><a href="/contacts">Contacts</a></li>
+    <li><a href="/polytics">Polytics</a></li>
+    <li><a href="/vacancies">Vacancies</a></li>
+    <li><a href="/reviews">Review</a></li>
+    <li><a href="/promocodes">Codes and Coupons</a></li>
+    <li><a href="/countries">Available Directions</a></li>
+    <li><a href="/hotels">Hotels</a></li>
+    <li><a href="/trips">Trips</a></li>
+    <li><a href="/api">API</a></li>
+    {% if user.is_authenticated %}
+    
+    {% if user.is_superuser %}
+        <li><a href="/users_admin">Users</a></li>
+        <li><a href="/diagram">Diagram</a></li>
+        <li><a href="/stats">Stats</a></li>
+    {% else %}
+        {% if user.role == 'client' %}
+        <li><a href="{% url 'agency:user_orders' user.id %}">Your Orders</a></li>
+        {% endif %}
+        {% if user.role == "staff" %}
+        <li><a href="/users_admin">Users</a></li>
+        <li><a href="/orders">Orders</a></li>
+    {% endif %}
+    {% endif %}
+        <li><a href="/signout">Sign Out</a></li>
+    {% else %}
+        <li><a href="/signin">Log In</a></li>
+        <li><a href="/signup">Sign Up</a></li>
+    {% endif %}
+</ul>
+{% block body %}{% endblock %}
+</body>
+</html>
