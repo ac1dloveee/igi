@@ -1,0 +1,1056 @@
+2024-05-29 07:12:03,416 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 07:12:03,695 INFO Watching for file changes with StatReloader
+2024-05-29 10:49:07,206 INFO Watching for file changes with StatReloader
+2024-05-29 10:49:23,492 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 10:49:23,817 INFO Watching for file changes with StatReloader
+2024-05-29 10:49:30,094 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 10:49:30,457 INFO Watching for file changes with StatReloader
+2024-05-29 10:49:32,955 WARNING Not Found: /favicon.ico
+2024-05-29 10:58:48,099 WARNING Not Found: /favicon.ico
+2024-05-29 10:59:37,864 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 10:59:38,268 INFO Watching for file changes with StatReloader
+2024-05-29 11:01:29,236 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:01:29,639 INFO Watching for file changes with StatReloader
+2024-05-29 11:03:12,550 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:03:12,951 INFO Watching for file changes with StatReloader
+2024-05-29 11:03:44,482 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:03:44,896 INFO Watching for file changes with StatReloader
+2024-05-29 11:03:51,169 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:03:51,557 INFO Watching for file changes with StatReloader
+2024-05-29 11:09:25,912 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:09:26,328 INFO Watching for file changes with StatReloader
+2024-05-29 11:12:32,760 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:12:33,140 INFO Watching for file changes with StatReloader
+2024-05-29 11:15:17,433 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:15:17,864 INFO Watching for file changes with StatReloader
+2024-05-29 11:15:53,326 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:15:53,706 INFO Watching for file changes with StatReloader
+2024-05-29 11:19:15,019 WARNING Not Found: /favicon.ico
+2024-05-29 11:19:16,467 WARNING Not Found: /stats
+2024-05-29 11:19:43,453 INFO /home/main/igilab/l5/djw/agency/urls.py changed, reloading.
+2024-05-29 11:19:43,782 INFO Watching for file changes with StatReloader
+2024-05-29 11:19:44,759 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 276, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:19:44,951 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 276, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:20:39,360 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:20:39,737 INFO Watching for file changes with StatReloader
+2024-05-29 11:21:47,388 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:21:47,752 INFO Watching for file changes with StatReloader
+2024-05-29 11:22:24,226 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:22:24,621 INFO Watching for file changes with StatReloader
+2024-05-29 11:22:25,873 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:22:26,343 INFO Watching for file changes with StatReloader
+2024-05-29 11:22:27,894 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 279, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:22:28,803 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 279, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:22:28,996 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 279, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:22:29,168 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 279, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:22:29,373 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 279, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:22:29,550 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 279, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:22:29,750 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 279, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:22:29,949 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 279, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:22:30,149 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 279, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:22:30,398 ERROR Internal Server Error: /stats/
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/statistics.py", line 327, in _exact_ratio
+    return (x.numerator, x.denominator)
+            ^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'numerator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 279, in stats
+    avg_sales = mean(sales)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 430, in mean
+    T, total, n = _sum(data)
+                  ^^^^^^^^^^
+  File "/usr/lib/python3.11/statistics.py", line 193, in _sum
+    for n, d in map(_exact_ratio, values):
+  File "/usr/lib/python3.11/statistics.py", line 330, in _exact_ratio
+    raise TypeError(msg)
+TypeError: can't convert type 'method' to numerator/denominator
+2024-05-29 11:22:54,833 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:22:55,261 INFO Watching for file changes with StatReloader
+2024-05-29 11:23:01,540 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:23:01,906 INFO Watching for file changes with StatReloader
+2024-05-29 11:23:54,547 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:23:54,911 INFO Watching for file changes with StatReloader
+2024-05-29 11:24:12,281 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 11:24:12,685 INFO Watching for file changes with StatReloader
+2024-05-29 11:25:40,495 INFO /home/main/igilab/l5/djw/agency/forms.py changed, reloading.
+2024-05-29 11:25:40,800 INFO Watching for file changes with StatReloader
+2024-05-29 11:26:08,178 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 11:26:08,552 INFO Watching for file changes with StatReloader
+2024-05-29 11:41:20,837 INFO Watching for file changes with StatReloader
+2024-05-29 11:41:24,974 WARNING Not Found: /favicon.ico
+2024-05-29 11:41:28,372 INFO alr LOGOUT (status: client)
+2024-05-29 11:43:30,727 WARNING Not Found: /favicon.ico
+2024-05-29 11:43:33,743 WARNING Not Found: /favicon.ico
+2024-05-29 11:44:14,827 WARNING Not Found: /
+2024-05-29 11:47:46,759 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 11:47:47,226 INFO Watching for file changes with StatReloader
+2024-05-29 11:47:53,394 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 11:47:53,779 INFO Watching for file changes with StatReloader
+2024-05-29 11:48:07,988 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 11:48:08,354 INFO Watching for file changes with StatReloader
+2024-05-29 11:48:11,488 WARNING Not Found: /favicon.ico
+2024-05-29 11:48:12,041 INFO al LOGOUT (status: staff)
+2024-05-29 11:48:39,844 INFO /home/main/igilab/l5/djw/agency/forms.py changed, reloading.
+2024-05-29 11:48:40,277 INFO Watching for file changes with StatReloader
+2024-05-29 11:49:38,345 ERROR Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 440, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/contrib/auth/views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/generic/edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/contrib/auth/views.py", line 107, in form_valid
+    auth_login(self.request, form.get_user())
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/contrib/auth/__init__.py", line 152, in login
+    user_logged_in.send(sender=user.__class__, request=request, user=user)
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/dispatch/dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/contrib/auth/models.py", line 23, in update_last_login
+    user.save(update_fields=["last_login"])
+TypeError: User.save() got an unexpected keyword argument 'update_fields'
+2024-05-29 11:50:09,190 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 11:50:09,653 INFO Watching for file changes with StatReloader
+2024-05-29 11:50:16,279 WARNING Forbidden (CSRF token from POST incorrect.): /admin/login/
+2024-05-29 11:50:21,450 ERROR Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 440, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/contrib/auth/views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/views/generic/edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/contrib/auth/views.py", line 107, in form_valid
+    auth_login(self.request, form.get_user())
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/contrib/auth/__init__.py", line 152, in login
+    user_logged_in.send(sender=user.__class__, request=request, user=user)
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/dispatch/dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/contrib/auth/models.py", line 23, in update_last_login
+    user.save(update_fields=["last_login"])
+TypeError: User.save() got an unexpected keyword argument 'update_fields'
+2024-05-29 11:50:55,282 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 11:50:55,698 INFO Watching for file changes with StatReloader
+2024-05-29 11:51:03,994 INFO /home/main/igilab/l5/djw/agency/forms.py changed, reloading.
+2024-05-29 11:51:04,440 INFO Watching for file changes with StatReloader
+2024-05-29 11:51:11,210 WARNING Forbidden (CSRF token from POST incorrect.): /signup/
+2024-05-29 11:52:24,060 INFO Watching for file changes with StatReloader
+2024-05-29 11:52:25,762 WARNING Not Found: /
+2024-05-29 11:55:12,518 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 11:55:12,926 INFO Watching for file changes with StatReloader
+2024-05-29 11:56:34,162 INFO Watching for file changes with StatReloader
+2024-05-29 11:56:35,916 WARNING Not Found: /
+2024-05-29 11:56:43,209 INFO al LOGOUT (status: staff)
+2024-05-29 12:01:52,718 INFO al LOGOUT (status: staff)
+2024-05-29 12:02:41,436 INFO al LOGOUT (status: staff)
+2024-05-29 12:04:47,776 INFO staff LOGOUT (status: staff)
+2024-05-29 12:08:30,907 INFO staff LOGOUT (status: staff)
+2024-05-29 12:10:20,715 INFO al LOGOUT (status: staff)
+2024-05-29 12:11:44,865 INFO al LOGOUT (status: staff)
+2024-05-29 12:14:35,438 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 12:14:35,849 INFO Watching for file changes with StatReloader
+2024-05-29 12:14:40,124 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 12:14:40,523 INFO Watching for file changes with StatReloader
+2024-05-29 12:14:49,793 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 12:14:50,185 INFO Watching for file changes with StatReloader
+2024-05-29 12:15:42,984 INFO alr LOGOUT (status: client)
+2024-05-29 12:15:57,601 INFO al LOGOUT (status: staff)
+2024-05-29 12:45:53,437 INFO Watching for file changes with StatReloader
+2024-05-29 12:46:14,234 INFO alr LOGOUT (status: client)
+2024-05-29 12:47:03,276 INFO Review 'mobb' was created by mobb 
+2024-05-29 12:49:06,276 INFO mobb LOGOUT (status: client)
+2024-05-29 13:45:04,644 INFO Watching for file changes with StatReloader
+2024-05-29 13:46:30,477 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 13:46:30,930 INFO Watching for file changes with StatReloader
+2024-05-29 13:47:26,099 INFO alr LOGOUT (status: client)
+2024-05-29 13:49:59,920 INFO stas LOGOUT (status: client)
+2024-05-29 13:50:39,641 INFO al LOGOUT (status: staff)
+2024-05-29 13:52:30,511 ERROR Internal Server Error: /user/6/orders
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 131, in user_orders
+    return render(request, 'user_orders.html', { 'orders': orders })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 909, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/models.py", line 116, in price
+    return price if self.promocode is None or not self.promocode.is_valid() else price * self.promocode.float_value()
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/models.py", line 69, in is_valid
+    return self.expires > datetime.now()
+                         ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+2024-05-29 13:53:19,118 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 13:53:19,633 INFO Watching for file changes with StatReloader
+2024-05-29 13:53:21,288 ERROR Internal Server Error: /user/6/orders
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 131, in user_orders
+    return render(request, 'user_orders.html', { 'orders': orders })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 909, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/models.py", line 116, in price
+    return price if self.promocode is None or not self.promocode.is_valid() else price * self.promocode.float_value()
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/models.py", line 69, in is_valid
+    return self.expires > datetime.now()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2024-05-29 13:53:21,470 WARNING Not Found: /favicon.ico
+2024-05-29 13:53:22,268 ERROR Internal Server Error: /user/6/orders
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 131, in user_orders
+    return render(request, 'user_orders.html', { 'orders': orders })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 909, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/models.py", line 116, in price
+    return price if self.promocode is None or not self.promocode.is_valid() else price * self.promocode.float_value()
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/models.py", line 69, in is_valid
+    return self.expires > datetime.now()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2024-05-29 13:54:35,422 INFO /home/main/igilab/l5/djw/agency/models.py changed, reloading.
+2024-05-29 13:54:35,885 INFO Watching for file changes with StatReloader
+2024-05-29 13:54:37,270 WARNING Not Found: /favicon.ico
+2024-05-29 14:10:24,496 INFO Watching for file changes with StatReloader
+2024-05-29 14:10:26,288 WARNING Not Found: /favicon.ico
+2024-05-29 14:11:41,837 INFO Review 'alr' was created by alr 
+2024-05-29 14:12:48,883 INFO Review 'alr' was created by alr 
+2024-05-29 14:15:03,173 INFO alr LOGOUT (status: client)
+2024-05-29 14:16:08,479 INFO staff LOGOUT (status: staff)
+2024-05-29 14:21:16,634 ERROR Internal Server Error: /hotels/
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 126, in hotels
+    return render(request, 'hotels.html', { 'hotels': hotels })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 510, in parse
+    raise self.error(token, e)
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 510, in parse
+    raise self.error(token, e)
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/defaulttags.py", line 981, in do_if
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Malformed template tag at line 33: "else if user.role == "client""
+2024-05-29 14:21:39,948 ERROR Internal Server Error: /hotels/
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 126, in hotels
+    return render(request, 'hotels.html', { 'hotels': hotels })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 510, in parse
+    raise self.error(token, e)
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 510, in parse
+    raise self.error(token, e)
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/defaulttags.py", line 981, in do_if
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Malformed template tag at line 33: "else if user.role == 'client'"
+2024-05-29 14:21:59,863 INFO staff LOGOUT (status: staff)
+2024-05-29 14:22:31,084 INFO alr LOGOUT (status: client)
+2024-05-29 14:22:58,208 INFO staff LOGOUT (status: staff)
+2024-05-29 14:23:45,718 ERROR Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/agency/views.py", line 30, in home
+    return render(request, 'home.html', { 'latest': latest, 'localtime': timezone.localtime })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/main/igilab/l5/djw/dj/lib/python3.11/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 39: 'else'. Did you forget to register or load this tag?
+2024-05-29 14:24:40,427 INFO al LOGOUT (status: staff)
+2024-05-29 14:25:14,365 WARNING Forbidden: /users_admin/
+2024-05-29 14:25:42,875 INFO /home/main/igilab/l5/djw/agency/views.py changed, reloading.
+2024-05-29 14:25:43,260 INFO Watching for file changes with StatReloader
+2024-05-29 14:25:51,050 INFO staff LOGOUT (status: staff)
+2024-05-29 14:26:05,656 INFO al LOGOUT (status: staff)
+2024-05-29 14:26:32,443 INFO stas LOGOUT (status: client)
+2024-05-29 14:28:35,718 INFO staff LOGOUT (status: staff)

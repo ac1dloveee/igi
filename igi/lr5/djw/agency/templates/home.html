@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+{% block body %}
+
+<center><h1>WELCOME</h1>
+    <h2>Timezone: {{ request.user.timezone }}</h2>
+    <h2>Current Time: {{ localtime }}</h2>
+</center>
+
+<center><div>
+    <img src="{{ latest.picture.url }}" width="400px" height="auto">
+    <h1>{{ latest.header }}</h1>
+    <h2>{{ latest.short_description }}</h2>
+    <h3>{{ latest.added }}</h3>
+</div></center>
+
+{% endblock %}

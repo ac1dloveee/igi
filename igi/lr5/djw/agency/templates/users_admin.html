@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}users{% endblock %}
+{% block body %}
+<center>
+    <h1>Users</h1>
+</center>
+
+<center>
+{% for item in users %}
+<div>
+    <h1>username: {{ item.username }}</h1>
+    <h2>phone number: {{ item.phone }}</h2>
+    <h2>address: {{ item.address }}</h2>
+    <h2>{{ item.age }} years old</h2>
+    {% for o in item.orders.all %}
+        <h3>country: {{ o.trip.country.name }}, price: {{ o.price }}, orders: {{ o.amount }}</h3>
+    {% endfor %}
+</div>
+{% endfor %}
+</center>
+
+{% endblock %}

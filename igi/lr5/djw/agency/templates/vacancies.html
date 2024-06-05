@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}Vacancies{% endblock %}
+{% block body %}
+
+<center><h1><strong>VACANCIES</strong></h1></center>
+
+<center>
+{% for item in vacancies %}
+<div>
+    <h1>Name: {{ item.name }}</h1>
+    <h2>Description: {{ item.description }}</h2>
+</div>
+{% endfor %}
+</center>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}Reviews{% endblock %}
+{% block body %}
+
+<center><h1><strong>REVIEWS</strong></h1></center>
+
+<center>
+{% for item in reviews %}
+<div>
+    <h1>Username: {{ item.name }}</h1>
+    <h3>{{ item.rating }}/10</h3>
+    <h2>{{ item.text }}</h2>
+    <h3>Written: {{ item.written }}</h3>
+    {% if item.name == user.username %}
+        <a href="{% url 'agency:edit_review' item.pk %}">Edit</a>
+        <a href="{% url 'agency:delete_review' item.pk %}">Delete</a>
+    {% endif %}
+</div>
+{% endfor %}
+</center>
+
+<center>
+    <button type="submit"><a href="/create_review">Write a review</a></button>
+</center>
+
+{% endblock %}
